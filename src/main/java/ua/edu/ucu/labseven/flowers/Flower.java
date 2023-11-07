@@ -1,5 +1,7 @@
 package ua.edu.ucu.labseven.flowers;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -9,7 +11,10 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
+@Entity
 public class Flower {
+    @Id
+    private int id;
     private double sepalLength;
     private FlowerColor color;
     private double price;

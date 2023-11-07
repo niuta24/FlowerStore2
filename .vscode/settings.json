@@ -1,5 +1,17 @@
 {
     "java.compile.nullAnalysis.mode": "automatic",
     "java.configuration.updateBuildConfiguration": "interactive",
-    "java.checkstyle.configuration": "${workspaceFolder}\\.github\\linters\\checkstyle.xml"
+    "java.checkstyle.configuration": "${workspaceFolder}\\.github\\linters\\checkstyle.xml",
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "postgres",
+            "group": "postgres",
+            "database": "postgres",
+            "username": "postgres"
+        }
+    ]
 }
